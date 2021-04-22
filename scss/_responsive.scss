@@ -3,11 +3,11 @@
   }
   .cards {
     display: flex;
-    max-width: 890px;
-    margin: 250px auto;
+    max-width: 922px;
+    margin: 170px auto;
   }
   .card {
-    &__sub-title {
+    padding: 45px &__sub-title {
       margin-bottom: 100px;
     }
     &--one {

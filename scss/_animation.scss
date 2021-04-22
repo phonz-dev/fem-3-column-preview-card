@@ -1,0 +1,39 @@
+.shake {
+  animation: shake 0.7s infinite;
+}
+
+@keyframes shake {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: -1px;
+  }
+  20% {
+    top: 1px;
+  }
+  30% {
+    top: -1px;
+  }
+  40% {
+    top: 1px;
+  }
+  50% {
+    top: -1px;
+  }
+  60% {
+    top: 1px;
+  }
+  70% {
+    top: -1px;
+  }
+  80% {
+    top: 1px;
+  }
+  90% {
+    top: -1px;
+  }
+  100% {
+    top: 1px;
+  }
+}
