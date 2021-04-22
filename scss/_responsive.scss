@@ -1,14 +1,20 @@
-@media (min-width: 1100px) {
-  .container {
+@media (min-width: 600px) {
+  .cards {
+    max-width: 600px;
+    margin: auto;
   }
+}
+
+@media (min-width: 950px) {
   .cards {
     display: flex;
     max-width: 922px;
     margin: 170px auto;
   }
   .card {
-    padding: 45px &__sub-title {
-      margin-bottom: 100px;
+    padding: 45px 50px 45px;
+    &__sub-title {
+      margin-bottom: 83px;
     }
     &--one {
       border-top-right-radius: 0;

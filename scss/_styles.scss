@@ -3,10 +3,6 @@ body {
   background-color: $clr-light-gray;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .container {
   padding: 0 23px;
   margin-top: 87px;
@@ -14,7 +10,9 @@ ul {
 
 .card {
   padding: 40px 48px;
-
+  max-width: 922px;
+  margin: auto;
+  list-style-type: none;
   &__title {
     color: $clr-light-gray;
     text-transform: uppercase;
@@ -33,5 +31,21 @@ ul {
   &__image {
     margin-bottom: 39px;
     position: relative;
+  }
+
+  &__btn {
+    background-color: $clr-light-gray;
+    font-family: $ff-lexend;
+    font-size: 15px;
+    padding: 12px 30px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border: 3px solid $clr-light-gray;
+    transition: background 500ms, color 500ms;
+    outline: none;
+    &:hover {
+      color: $clr-light-gray;
+      background-color: transparent;
+    }
   }
 }

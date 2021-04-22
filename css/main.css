@@ -11,10 +11,6 @@ body {
   background-color: #f2f2f2;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .container {
   padding: 0 23px;
   margin-top: 87px;
@@ -22,6 +18,9 @@ ul {
 
 .card {
   padding: 40px 48px;
+  max-width: 922px;
+  margin: auto;
+  list-style-type: none;
 }
 
 .card__title {
@@ -44,6 +43,23 @@ ul {
   position: relative;
 }
 
+.card__btn {
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding: 12px 30px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: 3px solid #f2f2f2;
+  transition: background 500ms, color 500ms;
+  outline: none;
+}
+
+.card__btn:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
 .card--one {
   background-color: #e38826;
   border-top-left-radius: 8px;
@@ -60,47 +76,69 @@ ul {
   border-bottom-right-radius: 8px;
 }
 
-.card__btn {
-  background-color: #f2f2f2;
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 15px;
-  padding: 12px 30px;
-  margin-bottom: 10px;
-  border-radius: 50px;
-  border: 3px solid #f2f2f2;
-  transition: background 500ms, color 500ms;
-}
-
-.card__btn:hover {
-  color: #f2f2f2;
-}
-
 .card__btn--one {
   color: #e38826;
-}
-
-.card__btn--one:hover {
-  background-color: #e38826;
 }
 
 .card__btn--two {
   color: #006970;
 }
 
-.card__btn--two:hover {
-  background-color: #006970;
-}
-
 .card__btn--three {
   color: #004241;
 }
 
-.card__btn--three:hover {
-  background-color: #004241;
-}
-
 .shake {
   animation: shake 0.7s infinite;
+}
+
+.move {
+  animation: move 0.5s forwards;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 10px;
+  }
+  20% {
+    left: 20px;
+    opacity: 0.9;
+  }
+  30% {
+    left: 30px;
+    opacity: 0.8;
+  }
+  40% {
+    left: 40px;
+    opacity: 0.7;
+  }
+  50% {
+    left: 50px;
+    opacity: 0.6;
+  }
+  60% {
+    left: 60px;
+    opacity: 0.5;
+  }
+  70% {
+    left: 70px;
+    opacity: 0.4;
+  }
+  80% {
+    left: 80px;
+    opacity: 0.3;
+  }
+  90% {
+    left: 90px;
+    opacity: 0.2;
+  }
+  100% {
+    left: 100px;
+    opacity: 0;
+  }
 }
 
 @keyframes shake {
@@ -139,15 +177,24 @@ ul {
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 600px) {
+  .cards {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 950px) {
   .cards {
     display: flex;
     max-width: 922px;
     margin: 170px auto;
   }
   .card {
-    padding: 45px .card __sub-title;
-    padding-margin-bottom: 100px;
+    padding: 45px 50px 45px;
+  }
+  .card__sub-title {
+    margin-bottom: 83px;
   }
   .card--one {
     border-top-right-radius: 0;

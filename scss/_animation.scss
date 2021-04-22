@@ -2,6 +2,55 @@
   animation: shake 0.7s infinite;
 }
 
+.move {
+  animation: move 0.5s forwards;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 10px;
+  }
+  20% {
+    left: 20px;
+    opacity: 0.9;
+  }
+  30% {
+    left: 30px;
+    opacity: 0.8;
+  }
+  40% {
+    left: 40px;
+    opacity: 0.7;
+  }
+  50% {
+    left: 50px;
+    opacity: 0.6;
+  }
+  60% {
+    left: 60px;
+    opacity: 0.5;
+  }
+  70% {
+    left: 70px;
+    opacity: 0.4;
+  }
+  80% {
+    left: 80px;
+    opacity: 0.3;
+  }
+  90% {
+    left: 90px;
+    opacity: 0.2;
+  }
+  100% {
+    left: 100px;
+    opacity: 0;
+  }
+}
+
 @keyframes shake {
   0% {
     top: 0;

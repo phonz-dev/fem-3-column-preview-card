@@ -16,38 +16,16 @@
   }
 
   &__btn {
-    background-color: $clr-light-gray;
-    font-family: $ff-lexend;
-    font-size: 15px;
-    padding: 12px 30px;
-    margin-bottom: 10px;
-    border-radius: 50px;
-    border: 3px solid $clr-light-gray;
-    transition: background 500ms, color 500ms;
-
-    &:hover {
-      color: $clr-light-gray;
-    }
-
     &--one {
       color: $clr-orange;
-      &:hover {
-        background-color: $clr-orange;
-      }
     }
 
     &--two {
       color: $clr-cyan-700;
-      &:hover {
-        background-color: $clr-cyan-700;
-      }
     }
 
     &--three {
       color: $clr-cyan-900;
-      &:hover {
-        background-color: $clr-cyan-900;
-      }
     }
   }
 }
