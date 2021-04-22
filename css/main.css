@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: #f2f2f2;
+}
+
+h2 {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+  margin-bottom: 45px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  padding: 0 25px;
+  margin-top: 90px;
+}
+
+.card {
+  padding: 40px 45px 65px;
+}
+
+.card__image {
+  margin-bottom: 30px;
+}
+
+.card__link {
+  background-color: #f2f2f2;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+.card--one {
+  background-color: #e38826;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card--one > a {
+  color: #e38826;
+}
+
+.card--two {
+  background-color: #006970;
+}
+
+.card--two > a {
+  color: #006970;
+}
+
+.card--three {
+  background-color: #004241;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card--three > a {
+  color: #004241;
+}
+
+@media (min-width: 1100px) {
+  .cards {
+    display: flex;
+    max-width: 890px;
+    margin: 250px auto;
+  }
+  .card__sub-title {
+    margin-bottom: 100px;
+  }
+  .card--one {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+  .card--three {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+}
