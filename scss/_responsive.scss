@@ -1,28 +1,38 @@
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   .cards {
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: auto;
+  }
+
+  .attribution {
+    font-size: 0.8125rem;
+    margin: 1.5625rem;
   }
 }
 
 @media (min-width: 950px) {
   .cards {
     display: flex;
-    max-width: 922px;
-    margin: 170px auto;
+    max-width: 57.625rem;
+    margin: 10.625rem auto;
   }
   .card {
-    padding: 45px 50px 45px;
+    padding: 2.8125rem 3.125rem 2.8125rem;
     &__sub-title {
-      margin-bottom: 83px;
+      margin-bottom: 5.1875rem;
     }
     &--one {
       border-top-right-radius: 0;
-      border-bottom-left-radius: 8px;
+      border-bottom-left-radius: 0.5rem;
     }
     &--three {
-      border-top-right-radius: 8px;
+      border-top-right-radius: 0.5rem;
       border-bottom-left-radius: 0;
     }
+  }
+
+  .attribution {
+    font-size: 0.9375rem;
+    margin: 1.875rem;
   }
 }

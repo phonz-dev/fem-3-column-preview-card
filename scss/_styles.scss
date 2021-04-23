@@ -1,48 +1,49 @@
 body {
-  font-size: 15px;
+  font-size: 0.9375rem;
   background-color: $clr-light-gray;
 }
 
 .container {
-  padding: 0 23px;
-  margin-top: 87px;
+  padding: 0 1.4375rem;
+  margin-top: 5.4375rem;
 }
 
 .card {
-  padding: 40px 48px;
-  max-width: 922px;
+  padding: 2.5rem 3rem;
+  max-width: 57.625rem;
   margin: auto;
   list-style-type: none;
   &__title {
     color: $clr-light-gray;
     text-transform: uppercase;
     font-family: $ff-big-shoulders;
-    font-size: 38px;
-    margin-bottom: 24px;
+    font-size: 2.375rem;
+    margin-bottom: 1.5rem;
   }
 
   &__sub-title {
     color: $clr-trans-white;
     font-family: $ff-lexend;
-    line-height: 25px;
-    margin-bottom: 27px;
+    line-height: 1.5625rem;
+    margin-bottom: 1.6875rem;
   }
 
   &__image {
-    margin-bottom: 39px;
+    margin-bottom: 2.4375rem;
     position: relative;
   }
 
   &__btn {
     background-color: $clr-light-gray;
     font-family: $ff-lexend;
-    font-size: 15px;
-    padding: 12px 30px;
-    margin-bottom: 10px;
-    border-radius: 50px;
-    border: 3px solid $clr-light-gray;
+    font-size: 0.9375rem;
+    padding: 0.75rem 1.875rem;
+    margin-bottom: 0.625rem;
+    border-radius: 3.125rem;
+    border: 0.1875rem solid $clr-light-gray;
     transition: background 500ms, color 500ms;
     outline: none;
+    cursor: pointer;
     &:hover {
       color: $clr-light-gray;
       background-color: transparent;

@@ -1,0 +1,13 @@
+.attribution {
+  font-size: 0.625rem;
+  text-align: center;
+  font-family: $ff-lexend;
+  margin: 0.9375rem;
+
+  & > a {
+    color: $clr-cyan-900;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,8 +1,8 @@
 .card {
   &--one {
     background-color: $clr-orange;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
   }
 
   &--two {
@@ -11,8 +11,8 @@
 
   &--three {
     background-color: $clr-cyan-900;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 
   &__btn {

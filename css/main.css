@@ -7,18 +7,18 @@
 }
 
 body {
-  font-size: 15px;
+  font-size: 0.9375rem;
   background-color: #f2f2f2;
 }
 
 .container {
-  padding: 0 23px;
-  margin-top: 87px;
+  padding: 0 1.4375rem;
+  margin-top: 5.4375rem;
 }
 
 .card {
-  padding: 40px 48px;
-  max-width: 922px;
+  padding: 2.5rem 3rem;
+  max-width: 57.625rem;
   margin: auto;
   list-style-type: none;
 }
@@ -27,32 +27,33 @@ body {
   color: #f2f2f2;
   text-transform: uppercase;
   font-family: "Big Shoulders Display", cursive;
-  font-size: 38px;
-  margin-bottom: 24px;
+  font-size: 2.375rem;
+  margin-bottom: 1.5rem;
 }
 
 .card__sub-title {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Lexend Deca", sans-serif;
-  line-height: 25px;
-  margin-bottom: 27px;
+  line-height: 1.5625rem;
+  margin-bottom: 1.6875rem;
 }
 
 .card__image {
-  margin-bottom: 39px;
+  margin-bottom: 2.4375rem;
   position: relative;
 }
 
 .card__btn {
   background-color: #f2f2f2;
   font-family: "Lexend Deca", sans-serif;
-  font-size: 15px;
-  padding: 12px 30px;
-  margin-bottom: 10px;
-  border-radius: 50px;
-  border: 3px solid #f2f2f2;
+  font-size: 0.9375rem;
+  padding: 0.75rem 1.875rem;
+  margin-bottom: 0.625rem;
+  border-radius: 3.125rem;
+  border: 0.1875rem solid #f2f2f2;
   transition: background 500ms, color 500ms;
   outline: none;
+  cursor: pointer;
 }
 
 .card__btn:hover {
@@ -62,8 +63,8 @@ body {
 
 .card--one {
   background-color: #e38826;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .card--two {
@@ -72,8 +73,8 @@ body {
 
 .card--three {
   background-color: #004241;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .card__btn--one {
@@ -88,57 +89,27 @@ body {
   color: #004241;
 }
 
+.attribution {
+  font-size: 0.625rem;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0.9375rem;
+}
+
+.attribution > a {
+  color: #004241;
+}
+
+.attribution > a:hover {
+  text-decoration: none;
+}
+
 .shake {
   animation: shake 0.7s infinite;
 }
 
 .move {
   animation: move 0.5s forwards;
-}
-
-@keyframes move {
-  0% {
-    left: 0;
-  }
-  10% {
-    left: 10px;
-  }
-  20% {
-    left: 20px;
-    opacity: 0.9;
-  }
-  30% {
-    left: 30px;
-    opacity: 0.8;
-  }
-  40% {
-    left: 40px;
-    opacity: 0.7;
-  }
-  50% {
-    left: 50px;
-    opacity: 0.6;
-  }
-  60% {
-    left: 60px;
-    opacity: 0.5;
-  }
-  70% {
-    left: 70px;
-    opacity: 0.4;
-  }
-  80% {
-    left: 80px;
-    opacity: 0.3;
-  }
-  90% {
-    left: 90px;
-    opacity: 0.2;
-  }
-  100% {
-    left: 100px;
-    opacity: 0;
-  }
 }
 
 @keyframes shake {
@@ -177,31 +148,84 @@ body {
   }
 }
 
-@media (min-width: 600px) {
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0.625rem;
+  }
+  20% {
+    left: 1.25;
+    opacity: 0.9;
+  }
+  30% {
+    left: 1.875;
+    opacity: 0.8;
+  }
+  40% {
+    left: 2.5rem;
+    opacity: 0.7;
+  }
+  50% {
+    left: 3.125rem;
+    opacity: 0.6;
+  }
+  60% {
+    left: 3.75rem;
+    opacity: 0.5;
+  }
+  70% {
+    left: 4.375rem;
+    opacity: 0.4;
+  }
+  80% {
+    left: 5rem;
+    opacity: 0.3;
+  }
+  90% {
+    left: 5.625rem;
+    opacity: 0.2;
+  }
+  100% {
+    left: 6.25rem;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 37.5rem) {
   .cards {
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: auto;
+  }
+  .attribution {
+    font-size: 0.8125rem;
+    margin: 1.5625rem;
   }
 }
 
 @media (min-width: 950px) {
   .cards {
     display: flex;
-    max-width: 922px;
-    margin: 170px auto;
+    max-width: 57.625rem;
+    margin: 10.625rem auto;
   }
   .card {
-    padding: 45px 50px 45px;
+    padding: 2.8125rem 3.125rem 2.8125rem;
   }
   .card__sub-title {
-    margin-bottom: 83px;
+    margin-bottom: 5.1875rem;
   }
   .card--one {
     border-top-right-radius: 0;
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 0.5rem;
   }
   .card--three {
-    border-top-right-radius: 8px;
+    border-top-right-radius: 0.5rem;
     border-bottom-left-radius: 0;
+  }
+  .attribution {
+    font-size: 0.9375rem;
+    margin: 1.875rem;
   }
 }
